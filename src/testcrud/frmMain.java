@@ -40,6 +40,7 @@ public class frmMain extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jOptionPane1 = new javax.swing.JOptionPane();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -68,6 +69,8 @@ public class frmMain extends javax.swing.JFrame {
         save = new javax.swing.JButton();
         clear = new javax.swing.JButton();
         delete = new javax.swing.JButton();
+        CLEAR = new javax.swing.JButton();
+        LATE = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jenis = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
@@ -262,6 +265,26 @@ public class frmMain extends javax.swing.JFrame {
         jPanel2.add(delete);
         delete.setBounds(140, 10, 80, 40);
 
+        CLEAR.setBackground(new java.awt.Color(153, 0, 153));
+        CLEAR.setText("ON TIME");
+        CLEAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CLEARActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CLEAR);
+        CLEAR.setBounds(790, 13, 80, 30);
+
+        LATE.setBackground(new java.awt.Color(153, 0, 153));
+        LATE.setText("LATE");
+        LATE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LATEActionPerformed(evt);
+            }
+        });
+        jPanel2.add(LATE);
+        LATE.setBounds(880, 10, 73, 30);
+
         getContentPane().add(jPanel2);
         jPanel2.setBounds(330, 70, 980, 60);
 
@@ -299,7 +322,7 @@ public class frmMain extends javax.swing.JFrame {
 
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
         // TODO add your handling code here:   
-        
+         
         
         String kondisi = status.getText();
         if("".equals(no.getText()) || "".equals(txtNama.getText()) || "".equals(jenis) ||"".equals(alamat_peminjam.getText()) || "".equals(judul.getText()) || "".equals(tgl_pinjam) || "".equals(tgl_kembali) || "".equals(status.getText()))
@@ -308,9 +331,7 @@ public class frmMain extends javax.swing.JFrame {
         } 
         
         
-        else if (kondisi == "LATE"){
-            JOptionPane.showMessageDialog(this, "DENDA 3000", "DENDA", JOptionPane.WARNING_MESSAGE);
-        }
+    
             
         
  
@@ -424,6 +445,16 @@ public class frmMain extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnEditActionPerformed
 
+    private void LATEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LATEActionPerformed
+        // TODO add your handling code here:
+          JOptionPane.showMessageDialog(this, "HARAP BAYAR DENDA SEBESAR 3000", "DENDA", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_LATEActionPerformed
+
+    private void CLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CLEARActionPerformed
+        // TODO add your handling code here:
+         JOptionPane.showMessageDialog(this, "TERIMAKASIH :)", "PUSTEL", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_CLEARActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -460,9 +491,12 @@ public class frmMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CLEAR;
+    private javax.swing.JButton LATE;
     private javax.swing.JTextArea alamat_peminjam;
     private javax.swing.JButton btnEdit;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton clear;
     private javax.swing.JButton delete;
     private javax.swing.JLabel jLabel1;
