@@ -10,3 +10,4 @@ FUNGSI :
 ![image](https://cloud.githubusercontent.com/assets/22056194/24050179/974d2aec-0b60-11e7-8a7f-1f3dcfa8721a.png)
 ![image](https://cloud.githubusercontent.com/assets/22056194/24050195/a7c26d7e-0b60-11e7-937e-f53bc96bcbdf.png)
 ![image](https://cloud.githubusercontent.com/assets/22056194/24050263/e45d470e-0b60-11e7-88f2-909b02091e0c.png)
+![image](https://cloud.githubusercontent.com/assets/22056194/24050985/34081958-0b63-11e7-85aa-8323b1ba7622.png)
